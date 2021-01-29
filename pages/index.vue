@@ -1,17 +1,30 @@
 <template>
-  <div class="container">
-    <Logo />
-    <Navigation />
+  <div>
+    index
   </div>
 </template>
 
 <script>
-import Logo from '@/components/Logo'
-import Navigation from '@/components/Navigation'
 export default {
-  components: {
-    Logo,
-    Navigation
+  data () {
+    return {
+      title: 'LAYOUT'
+    }
+  },
+  head () {
+    return {
+      title: this.title,
+      meta: [
+        {
+          hid: 'title',
+          name: 'title',
+          content: this.title
+        }
+      ]
+    }
+  },
+  beforeMount () {
+    this.$store.dispatch('changePageTitle', this.title)
   }
 }
 </script>

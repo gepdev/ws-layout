@@ -1,3 +1,6 @@
 module.exports = {
-  darkMode: 'class'
+  darkMode: 'class',
+  fontFamily: {
+    sans: ['Roboto', 'sans-serif']
+  }
 }
