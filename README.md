@@ -1,4 +1,5 @@
 # ws-layout
+Warehouse layout management. 
 
 ## Build Setup
 

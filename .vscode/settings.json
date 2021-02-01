@@ -1,11 +1,15 @@
 {
   "editor.tabSize": 2,
+  "editor.formatOnSave": true,
+  "vetur.validation.template": false,
   "eslint.validate": [
     "javascript",
     "javascriptreact",
     "vue"
   ],
-  "emmet.useNewEmmet": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
   "emmet.syntaxProfiles": {
     "vue-html": "html",
     "vue": "html"

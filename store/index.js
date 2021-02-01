@@ -6,20 +6,20 @@ export const state = () => ({
 })
 
 export const mutations = {
-  changePageTitle (state, payload) {
+  changePageTitle(state, payload) {
     state.pageTitle = payload
   },
-  changeDarkMode (state, payload) {
+  changeDarkMode(state, payload) {
     nuxtStorage.localStorage.setData('darkMode', payload)
     state.darkMode = payload
   }
 }
 
 export const actions = {
-  changePageTitle ({ commit }, payload) {
+  changePageTitle({ commit }, payload) {
     commit('changePageTitle', payload)
   },
-  changeDarkMode ({ commit }, payload) {
+  changeDarkMode({ commit }, payload) {
     commit('changeDarkMode', payload)
   }
 }

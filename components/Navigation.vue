@@ -1,28 +1,47 @@
 <template>
-  <nav class="bg-gray-800 dark:bg-gray-100 text-gray-100 text-sm text-center">
+  <nav class="bg-gray-800 dark:bg-gray-100 text-gray-200 text-xs text-center">
     <section aria-label="Logo" class="p-4 flex justify-center align-middle">
-      <nuxt-link to="/">
+      <NuxtLink to="/">
         <Logo />
-      </nuxt-link>
+      </NuxtLink>
     </section>
-    <section aria-label="Layout" title="Layout" class="flex flex-col mb-1">
-      <nuxt-link to="/elenco" class="flex flex-col align-middle justify-center mb-2">
+    <section aria-label="Elenco" class="flex flex-col mb-1">
+      <h1 class="mb-2 font-bold">Layout</h1>
+      <NuxtLink
+        to="/layout/elenco"
+        title="Elenco"
+        class="flex flex-col align-middle justify-center mb-2 focus:outline-none hover:text-blue-300 transition-colors duration-500"
+      >
         <i class="material-icons">apps</i>
         Elenco
-      </nuxt-link>
-      <nuxt-link to="/nuovo" class="flex flex-col align-middle justify-center mb-2">
+      </NuxtLink>
+      <NuxtLink
+        to="/layout/nuovo"
+        title="Nuovo"
+        class="flex flex-col align-middle justify-center mb-2 focus:outline-none hover:text-blue-300 transition-colors duration-500"
+      >
         <i class="material-icons">add</i>
         Nuovo
-      </nuxt-link>
-      <nuxt-link to="/cerca" class="flex flex-col align-middle justify-center mb-2">
+      </NuxtLink>
+      <NuxtLink
+        to="/layout/cerca"
+        title="Cerca"
+        class="flex flex-col align-middle justify-center mb-2 focus:outline-none hover:text-blue-300 transition-colors duration-500"
+      >
         <i class="material-icons">search</i>
         Cerca
-      </nuxt-link>
+      </NuxtLink>
     </section>
     <section aria-label="Posizioni">
-      <nuxt-link to="/cerca">
+      <h1 class="mb-2 font-bold">Posizioni</h1>
+      <NuxtLink
+        title="Cerca"
+        to="/posizioni/cerca"
+        class="flex flex-col align-middle justify-center mb-2 focus:outline-none hover:text-blue-300 transition-colors duration-500"
+      >
+        <i class="material-icons">search</i>
         Cerca
-      </nuxt-link>
+      </NuxtLink>
     </section>
   </nav>
 </template>
