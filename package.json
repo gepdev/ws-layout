@@ -15,7 +15,7 @@
     "@nuxtjs/pwa": "^3.3.5",
     "@tailwindcss/forms": "^0.2.1",
     "core-js": "^3.8.3",
-    "nuxt": "^2.14.12",
+    "nuxt": "^2.15.5",
     "nuxt-storage": "^1.2.2",
     "vue-router-sync": "^0.1.0",
     "vuex-router-sync": "^5.0.0"
